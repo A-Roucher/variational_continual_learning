@@ -19,7 +19,7 @@ Which can be broken further down into:
 
 $p(\theta | D_{1:T-1}) p(D_{T}|\theta)$
 
-Which implies that the distribution of the model paremeters can be updated after each task, and still lead to exact inference of the true posterior.
+Which implies that the distribution of the model parameters can be updated after each task, and still lead to exact inference of the true posterior.
 
 
 ## This implementation
