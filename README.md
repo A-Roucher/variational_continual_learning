@@ -19,7 +19,7 @@ Which can be broken further down into:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=p(\theta|D_{1:T-1})&space;p(D_T|\theta)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p(\theta|D_{1:T-1})&space;p(D_T|\theta)" title="p(\theta|D_{1:T-1}) p(D_T|\theta)" /></a>
 
-Which implies that the distirbution of the model paremeters can be updated after each task, and still lead to exact inference of the true posterior.
+Which implies that the distribution of the model paremeters can be updated after each task, and still lead to exact inference of the true posterior.
 ## Dependencies
 
 ### To install
