@@ -21,6 +21,11 @@ $p(\theta | D_{1:T-1}) p(D_{T}|\theta)$
 
 Which implies that the distribution of the model paremeters can be updated after each task, and still lead to exact inference of the true posterior.
 
+
+## This implementation
+
+We have reproduced the discriminative experiments presented in the paper.
+
 ## Dependencies
 ````
 pip install torch
