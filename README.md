@@ -13,9 +13,11 @@ Continual learning is the area of machine learning where a model is given multip
 #### Baysian Solution
 The VCL paper is built on the observation that Bayesian inference is a very natural framework for Continual learning. In particular given model parameters $θ$, a prior over the model parameters $p(θ)$ and training data $D$, assuming independence between training examples the posterior distirbution of the parameters given the data can be written as:
 
-$p(\theta|D_{1:T}) \propto p(\theta,D_{1:T}) = p(\theta)p(D_{1:T}|\theta) = p(\theta) \prod_{1}^{T}p(D_{i}|\theta)$
+$p(\theta|D_{1:T}) \propto p(\theta,D_{1:T}) = p(\theta)p(D_{1:T}|\theta) = p(\theta) \prod_{i=1}^{T} p(D_{i}|\theta)$
 
 Which can be broken further down into:
+
+p(\theta | D_{1:T-1}) p(D_{T}|\theta)$
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=p(\theta|D_{1:T-1})&space;p(D_T|\theta)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p(\theta|D_{1:T-1})&space;p(D_T|\theta)" title="p(\theta|D_{1:T-1}) p(D_T|\theta)" /></a>
 
