@@ -15,9 +15,11 @@ The VCL paper is built on the observation that Bayesian inference is a very natu
 
 $p(\theta|D_{1:T}) \propto p(\theta,D_{1:T}) = p(\theta)p(D_{1:T}|\theta) = p(\theta) \prod_{i=1}^{T} p(D_{i}|\theta)$
 
+$\prod_{i=1}^{\infty}$
+
 Which can be broken further down into:
 
-p(\theta | D_{1:T-1}) p(D_{T}|\theta)$
+$p(\theta | D_{1:T-1}) p(D_{T}|\theta)$
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=p(\theta|D_{1:T-1})&space;p(D_T|\theta)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p(\theta|D_{1:T-1})&space;p(D_T|\theta)" title="p(\theta|D_{1:T-1}) p(D_T|\theta)" /></a>
 
