@@ -1,4 +1,4 @@
-# Vàriational Continual Learning
+# Variational Continual Learning
 
 ### By Aymeric Roucher, Vatsal Raina, Shawn Shen and Adian Liusie
 
@@ -13,7 +13,7 @@ Continual learning is the area of machine learning where a model is given multip
 #### Baysian Solution
 The VCL paper is built on the observation that Bayesian inference is a very natural framework for Continual learning. In particular given model parameters $θ$, a prior over the model parameters $p(θ)$ and training data $D$, assuming independence between training examples the posterior distirbution of the parameters given the data can be written as:
 
-$p(\theta|D_{1:T}) \propto p(\theta,D_{1:T})$
+$p(\theta|D_{1:T}) \propto p(\theta,D_{1:T}) = p(\theta)p(D_{1:T}|\theta) = p(\theta) \prod_{i=1}^{T}p(D_{i}|\theta)$
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=p(\theta|D_{1:T})&space;\propto&space;p(\theta,&space;D_{1:T})&space;=&space;p(\theta)&space;p(D_{1:T}|\theta)&space;=&space;p(\theta)\prod_{i=1}^{T}p(D_i|\theta)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p(\theta|D_{1:T})&space;\propto&space;p(\theta,&space;D_{1:T})&space;=&space;p(\theta)&space;p(D_{1:T}|\theta)&space;=&space;p(\theta)\prod_{i=1}^{T}p(D_i|\theta)" title="p(\theta|D_{1:T}) \propto p(\theta, D_{1:T}) = p(\theta) p(D_{1:T}|\theta) = p(\theta)\prod_{i=1}^{T}p(D_i|\theta)" /></a>
 
